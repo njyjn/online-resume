@@ -85,6 +85,12 @@ hr.star-primary:after {
     margin: 0 auto;
 }
 
+#personal-statement,
+#portfolio,
+#work {
+  background-color: #fafbfc;
+}
+
 .parallax {
   /* The image used */
   background-image: url("img/bg.jpg");
