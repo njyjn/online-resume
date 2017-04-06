@@ -4,8 +4,13 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
+html {
+  height: 100%;
+}
+
 body {
     overflow-x: hidden;
+    height: 100%;
 }
 
 p {
@@ -79,6 +84,25 @@ hr.star-primary:after {
 .img-centered {
     margin: 0 auto;
 }
+
+.parallax {
+  /* The image used */
+  background-image: url("img/bg.jpg");
+  -webkit-filter: blur(1px); /* Safari 6.0 - 9.0 */
+  filter: blur(1px);
+  /*-webkit-filter: grayscale(100%); /* Safari
+  filter: grayscale(100%);*/
+
+  /* Set a specific height */
+  height: 70%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 
 header {
     text-align: center;
