@@ -277,6 +277,12 @@ header .intro-text .skills {
     border: 0;
 }
 
+@media (max-width: 767px) {
+  .navbar-default .navbar-brand {
+    color: #000;
+  }
+}
+
 section {
     padding: 100px 0;
 }
