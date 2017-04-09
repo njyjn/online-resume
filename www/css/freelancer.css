@@ -94,8 +94,6 @@ hr.star-primary:after {
 .parallax {
   /* The image used */
   background-image: url("../img/bg.jpg");
-  -webkit-filter: blur(1px); /* Safari 6.0 - 9.0 */
-  filter: blur(1px);
   /*-webkit-filter: grayscale(100%); /* Safari
   filter: grayscale(100%);*/
 
@@ -103,11 +101,20 @@ hr.star-primary:after {
   height: 70%;
 
   /* Create the parallax scrolling effect */
-  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+@media(min-width:768px) {
+  .parallax {
+    -webkit-filter: blur(1px); /* Safari 6.0 - 9.0 */
+    filter: blur(1px);
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+  }
+}
+
 
 
 header {
